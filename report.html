@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>REPORT</title>
+  </head>
+  <body>
+    <h1>REPORT</h1>
+    <form action="/report" method="post">
+      <label for="report-type">Type of Report:</label>
+      <select name="report-type" id="report-type">
+        <option value="discrimination">Discrimination</option>
+        <option value="violence">Violence</option>
+      </select>
+      <br>
+      <label for="description">Description:</label>
+      <textarea name="description" id="description"></textarea>
+      <br>
+      <label for="anonymous">Report Anonymously:</label>
+      <input type="checkbox" name="anonymous" id="anonymous">
+      <br>
+      <label for="location">Share Location:</label>
+      <input type="checkbox" name="location" id="location">
+      <br>
+      <button type="submit">Submit Report</button>
+    </form>
+  </body>
+</html>
